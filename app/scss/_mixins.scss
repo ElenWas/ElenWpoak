@@ -1,0 +1,16 @@
+@mixin blocks ($blocks) {
+  padding: 5px;
+  margin: 5px;
+  //width: 350px;
+  height: 200px;
+  background-color: #333;
+  float: left;
+
+  @if($blocks <5){
+    width: 100%;
+  }
+
+  @else {
+    width: 350px;
+  }
+}
